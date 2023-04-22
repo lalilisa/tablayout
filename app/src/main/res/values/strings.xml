@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BaiTapChuong9</string>
+    <string-array name="category">
+        <item>Mua sam</item>
+        <item>Tien an</item>
+        <item>Tien nha</item>
+        <item>Tien dien</item>
+        <item>Tien nuoc</item>
+        <item>Tien di lai</item>
+    </string-array>
+    <string-array name="categorys">
+        <item>Sự thật</item>
+        <item>Giáo Dục</item>
+        <item>Khoa Học và Công Nghệ</item>
+        <item>Truyện cười</item>
+        <item>Giá Trị Cuộc Sống</item>
+    </string-array>
+
+</resources>
