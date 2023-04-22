@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.baitapchuong9.fragment.FragmentHistory;
 import com.example.baitapchuong9.fragment.FragmentHome;
+import com.example.baitapchuong9.fragment.FragmentInfo;
 import com.example.baitapchuong9.fragment.FragmentSearch;
 
 /**
@@ -23,7 +24,7 @@ public class ViewPagerAdapterTabLayout extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:return new FragmentHome();
-            case 1:return new FragmentHistory();
+            case 1:return new FragmentInfo();
             case 2:return new FragmentSearch();
 
         }
@@ -32,7 +33,7 @@ public class ViewPagerAdapterTabLayout extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 0;
+        return 3;
     }
 
     @Override

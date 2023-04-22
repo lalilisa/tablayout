@@ -21,6 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
     </LinearLayout>
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_marginLeft="10dp"
@@ -47,6 +48,33 @@
             android:hint="chọn thời gian"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        >
+        <CheckBox
+            android:id="@+id/ios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IOS"
+            />
+        <CheckBox
+            android:id="@+id/andr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android"
+            />
+        <CheckBox
+            android:id="@+id/java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"

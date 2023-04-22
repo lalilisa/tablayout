@@ -49,20 +49,17 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
             int year= c.get(Calendar.YEAR);
             int month= c.get(Calendar.MONTH);
             int day= c.get(Calendar.DAY_OF_MONTH);
-            DatePickerDialog dialog=new DatePickerDialog(AddActivity.this, new DatePickerDialog.OnDateSetListener() {
-                @Override
-                public void onDateSet(DatePicker datePicker, int y, int m, int d) {
-                    String mm="",dd="";
-                    if (m<10){
-                        mm="0"+(m+1);
-                    }
-                    else mm=(m+1)+"";
-                    if (d<10){
-                        dd="0"+d;
-                    }
-                    else dd=d+"";
-                    eDate.setText(dd+"/"+mm+"/"+y);
+            DatePickerDialog dialog=new DatePickerDialog(AddActivity.this, (datePicker, y, m, d) -> {
+                String mm="",dd="";
+                if (m<10){
+                    mm="0"+(m+1);
                 }
+                else mm=(m+1)+"";
+                if (d<10){
+                    dd="0"+d;
+                }
+                else dd=d+"";
+                eDate.setText(dd+"/"+mm+"/"+y);
             },year,month,day);
             dialog.show();
         }

@@ -43,7 +43,8 @@ public class FragmentHome extends Fragment implements RecycleViewAdapter.ItemLis
         db=new SQLiteHelper(getContext());
         Date d=new Date();
         SimpleDateFormat f=new SimpleDateFormat("dd/MM/yyyy");
-        List<Item> list=db.getByDate(f.format(d));
+//        List<Item> list=db.getByDate(f.format(d));
+        List<Item> list=db.getAll();
 //        Item i= new Item(1,"Mua xe may","mua sam","100","03/04/2023");
 //        db.addItem(i);
         adapter.setList(list);
@@ -75,7 +76,8 @@ public class FragmentHome extends Fragment implements RecycleViewAdapter.ItemLis
         Date d=new Date();
         SimpleDateFormat f=new SimpleDateFormat("dd/MM/yyyy");
         List<Item> list=db.getByDate(f.format(d));
-        adapter.setList(list);
+        List<Item> listAll=db.getAll();
+        adapter.setList(listAll);
         tvTong.setText("Tong tien: "+tinhtong(list));
     }
 }

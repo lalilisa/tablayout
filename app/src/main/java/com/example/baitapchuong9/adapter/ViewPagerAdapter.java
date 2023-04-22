@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.example.baitapchuong9.fragment.FragmentHistory;
 import com.example.baitapchuong9.fragment.FragmentHome;
+import com.example.baitapchuong9.fragment.FragmentInfo;
 import com.example.baitapchuong9.fragment.FragmentSearch;
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
@@ -19,7 +20,7 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:return new FragmentHome();
-            case 1:return new FragmentHistory();
+            case 1:return new FragmentInfo();
             case 2:return new FragmentSearch();
 
         }
